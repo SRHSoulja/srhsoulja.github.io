@@ -2,6 +2,7 @@ body {
   background-image: url('https://i.ibb.co/W0171fn/Goddess-Bootcut.jpg');
   background-size: cover;
   background-position: center 25%;
+  background-repeat: no-repeat;
   color: #fff;
   font-family: Arial, sans-serif;
 }
