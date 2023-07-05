@@ -1,0 +1,106 @@
+body {
+  background-image: url('goddessbootcut.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.game-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.game-board {
+  background-color: #272727;
+  padding: 20px;
+  text-align: center;
+}
+
+.board-tiles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.board-tiles .board-tile {
+  width: 80px;
+  height: 80px;
+  background-color: #545454;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: #fff;
+}
+
+.game-controls {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.roll-dice,
+.add-breakaways {
+  padding: 8px 16px;
+  background-color: #63C457;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  margin-right: 10px;
+}
+
+.roll-dice:hover,
+.add-breakaways:hover {
+  background-color: #4AA342;
+}
+
+.last-removed-task {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.last-removed-task .label {
+  margin-right: 10px;
+}
+
+.last-removed-task .task {
+  font-weight: bold;
+}
+
+.board-tile {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  background-color: #545454;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: #fff;
+}
+
+.board-tile::before {
+  content: attr(data-tile-number);
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  color: #fff;
+}
+
+h1 a {
+  color: #fff;
+  text-decoration: none;
+}
