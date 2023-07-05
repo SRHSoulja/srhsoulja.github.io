@@ -24,7 +24,7 @@ BootCut Desktop Version .420 is a JavaScript-based game that allows players to r
    - Enter the number of additional breakaways in the prompt and click "OK".
    - The breakaways count will be updated accordingly.
 
-5. Game Over
+5. Game Progression
    - The game continues until all breakaways are used or tasks are completed.
    - When no breakaways are remaining, the current task must be completed.
    - The last removed task will be displayed, and the game board will be updated accordingly.
