@@ -4,12 +4,20 @@
   <meta charset="UTF-8">
   <title>BootCut Desktop Version .420</title>
   <link rel="stylesheet" href="styles.css">
+  <style>
+    .instructions {
+      color: #fff;
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 20px;
+      margin-top: 20px;
+    }
+  </style>
 </head>
 <body>
   <div id="game-board"></div>
 
   <div class="game-container">
-    <h1>BootCut Desktop Version .420<br><span style="font-size: 14px;">As created by <a href="https://www.twitch.tv/abbabox" target="_blank">abbabox</a> & translated to desktop by TheArsonDragon</span></h1>
+    <h1>BootCut Desktop Version .420</h1>
     <div class="game-board">
       <div class="board-tiles"></div>
     </div>
@@ -25,7 +33,64 @@
       <span class="label">Last Removed Task:</span>
       <span class="task"></span>
     </div>
-<iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1310725873&color=%2364bb83&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/user-362487029" title="Bock Jansen" target="_blank" style="color: #cccccc; text-decoration: none;">Bock Jansen</a> · <a href="https://soundcloud.com/user-362487029/sets/songs-with-abbabox" title="Songs for Abbabox" target="_blank" style="color: #cccccc; text-decoration: none;">Songs for Abbabox</a></div>
+    <iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1310725873&color=%2364bb83&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+    <div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
+      <a href="https://soundcloud.com/user-362487029" title="Bock Jansen" target="_blank" style="color: #cccccc; text-decoration: none;">Bock Jansen</a> · <a href="https://soundcloud.com/user-362487029/sets/songs-with-abbabox" title="Songs for Abbabox" target="_blank" style="color: #cccccc; text-decoration: none;">Songs for Abbabox</a>
+    </div>
+    <div class="instructions">
+      <h2>Game Instructions</h2>
+      <p>BootCut Desktop Version .420 is a JavaScript-based game that allows players to roll dice and interact with a game board. This game is designed to be played in a web browser.</p>
+      <h3>How to Play</h3>
+      <ol>
+        <li>Access the Game
+        </li>
+        <li>Set up the Game
+          <ul>
+            <li>You will be prompted to enter the number of spaces on the game board and the number of breakaways for the game.</li>
+            <li>Enter the desired values and click "OK" to start the game.</li>
+          </ul>
+        </li>
+        <li>Gameplay
+          <ul>
+            <li>Click the "Roll the Dice" button to roll the dice and land on a spot on the game board.</li>
+            <li>If the spot is empty, you will be prompted to enter a task for that spot.</li>
+            <li>If the spot has a task, you will have the option to attempt a breakaway or complete the task.</li>
+            <li>Follow the prompts and make choices accordingly.</li>
+            <li>The game will update the game board display, breakaways count, and last removed task after each turn.</li>
+          </ul>
+        </li>
+        <li>How Breakaways Work
+          <ul>
+            <li>A breakaway roll is decided with a 6-sided die. Rolling a 2, 4, or 5 is considered a failed breakaway. Rolling a 6 is successful, and rolling a 1 is not only successful but allows the player to erase and replace the spot! Watch out for the 3 though, because rolling a 3 forces the player to take the task on the spot. If you run out of breakaways, you will also be forced to take the task on the spot you land on.</li>
+          </ul>
+        </li>
+        <li>Adding Breakaways
+          <ul>
+            <li>If you wish to add more breakaways during the game, click the "Add Breakaways" button.</li>
+            <li>Enter the number of additional breakaways in the prompt and click "OK".</li>
+            <li>The breakaways count will be updated accordingly.</li>
+          </ul>
+        </li>
+        <li>Game Progression
+          <ul>
+            <li>The game continues as breakaways are used and tasks are completed.</li>
+            <li>When no breakaways are remaining, the current task must be completed.</li>
+            <li>The last removed task will be displayed, so the player has no confusion over the task they are to complete, and the game board will be updated accordingly.</li>
+          </ul>
+        </li>
+        <li>Compatibility
+          <ul>
+            <li>The game is designed to be played on modern web browsers on desktop and mobile devices. It has been tested on popular browsers such as Chrome, Firefox, and Safari.</li>
+          </ul>
+        </li>
+        <li>Credits
+          <ul>
+            <li>Original game by abbabox</li>
+            <li>Translated to desktop version by TheArsonDragon</li>
+          </ul>
+        </li>
+      </ol>
+    </div>
   </div>
   <script src="script.js"></script>
 </body>
