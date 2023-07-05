@@ -1,12 +1,17 @@
 body {
-  background-image: url('https://i.ibb.co/W0171fn/Goddess-Bootcut.jpg');
+  background-image: url('goddessbootcut.jpg');
   background-size: cover;
-  background-position: center 25%;
-  background-repeat: no-repeat;
+  background-position: center 25%; /* Updated background position */
   color: #fff;
   font-family: Arial, sans-serif;
 }
 
+/* Mobile-specific styles */
+@media screen and (max-width: 767px) {
+  body {
+    background-position: center center; /* Reset background position for mobile */
+  }
+}
 
 h1 {
   text-align: center;
