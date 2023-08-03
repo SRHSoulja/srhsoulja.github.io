@@ -42,6 +42,8 @@ function updateBreakawaysDisplay() {
   breakawaysCount.textContent = breakawaysRemaining;
 }
 
+window.addEventListener('beforeunload', saveGameData);
+
 // Update the last removed task display
 function updateLastRemovedTaskDisplay() {
   const lastRemovedTaskElement = document.querySelector('.last-removed-task .task');
@@ -168,4 +170,36 @@ function promptPositiveInteger(message) {
     input = parseInt(prompt(message));
   } while (isNaN(input) || input <= 0);
   return input;
+}
+
+
+// Save the game data to local storage
+function saveGameData() {
+  const gameData = {
+    board: gameBoard,
+    breakaways: breakawaysRemaining,
+    lastTask: lastRemovedTask,
+  };
+  localStorage.setItem('gameData', JSON.stringify(gameData));
+}
+
+// Load the game data from local storage
+function loadGameData() {
+  const savedData = localStorage.getItem('gameData');
+  if (savedData) {
+    const gameData = JSON.parse(savedData);
+    gameBoard = gameData.board;
+    breakawaysRemaining = gameData.breakaways;
+    lastRemovedTask = gameData.lastTask;
+  }
+}
+
+// Prompt the player to set up the game if no saved data is found
+if (!localStorage.getItem('gameData')) {
+  const numberOfSpaces = promptPositiveInteger("Enter the number of spaces on the game board:");
+  const numberOfBreakaways = promptPositiveInteger("Enter the number of breakaways for the game:");
+  initializeGame(numberOfSpaces, numberOfBreakaways);
+} else {
+  // Load the saved game data if available
+  loadGameData();
 }
